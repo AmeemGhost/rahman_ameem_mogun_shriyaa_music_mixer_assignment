@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Music Mixer</title>
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<header id="headLine">
+		<h1>Music Mixer</h1>
+		<p>Cosmic Sound</p>
+	</header>
+	<section class="hero">
+		<div class="hero__content">
+		  <h2 hidden>Hero Images</h2>
+		  <img src="images/moon_background.png" alt="moon_background" width="900px" height="auto">
+		  
+		</div>
+	  </section>
+	  </div>
+	  <section>
+		<a href="#" class="previous round">&#8249;</a>
+		<a href="#" class="play">&laquo; play</a>
+		<a href="#" class="pause">pause&raquo;</a>
+	   <a href="#" class="next round">&#8250;</a>
+	   </section>
+	  <!--  <section class="button">
+		<div class="button-section">
+			<button class="button">
+				<img src="images/buttons.png" alt="buttons">
+			</button>
+				 <img src="images/backbutton.png" alt="back_button">
+				<img src="images/playbutton.png" alt="play_button">
+				<img src="images/pausebutton.png" alt="pause_button" width="100px" height="100px"> -->
+				<div class="empty">
+					<div class="fill" draggable="true"></div>
+					
+				<section id="chracter-space">
+					<div class="astro-men">
+						<img id="drag1" src="images/space_man_mic.png"  draggable="true" ondragstart="drag(event)" alt="space man"  width="200px" height="auto">
+						<img id="drag2" src="images/space_man_keyboard.png " draggable="true" ondragstart="drag(event)"  alt="space keyboard" width="220px" height="auto">
+						<img id="drag3" src="images/space_man_sax.png" draggable="true" ondragstart="drag(event)" alt="space sax"  width="250px" height="auto">
+						<img id="drag4" src="images/space_man_dj.png" draggable="true" ondragstart="drag(event)" alt="space dj"width="220px" height="auto">
+						<img id="drag5" src="images/space_man_guitar.png" draggable="true" ondragstart="drag(event)" alt="space guitar "width="200px" height="auto">
+						</div>
+					</div>
+				</section>
+				
+    <script>
+		
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+  
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+  
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script
+	<audio controls>
+		<source src="audio/acoustic-guitar-loop-f-91bpm-132687.mp3" type="audio/mp3" loop>
+		Your browser does not support the audio element.
+	  </audio>
+	
+	<audio data-audioref="space_man_guitar" class="audio" src="audio/acoustic-guitar-loop-f-91bpm-132687.mp3" loop></audio>
+	<audio data-audioref="img2" id="sound2" class="audio" src="audio/boom-128320.mp3" loop></audio>
+	<audio data-audioref="img3" id="sound3" class="audio" src="audio/boom-128320.mp3" loop></audio>
+	<audio data-audioref="img4" id="sound4" class="audio" src="audio/smooth-ac-guitar-loop-93bpm-137706.mp3" loop></audio>
+	<audio class="songs" src="audio/song1.mp3" loop></audio> 
+
+
+	
+	<script src="js/main.js"></script>
+</body>
+</html>
