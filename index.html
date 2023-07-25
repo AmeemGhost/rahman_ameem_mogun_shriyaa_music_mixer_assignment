@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -7,7 +7,7 @@
 	<link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+<!-- 
 	<header id="headLine">
 		<h1>Music Mixer</h1>
 		<p>Cosmic Sound</p>
@@ -26,7 +26,8 @@
 		<a href="#" class="pause">pause&raquo;</a>
 	   <a href="#" class="next round">&#8250;</a>
 	   </section>
-	  <!--  <section class="button">
+<!-- 	   
+	  <  <section class="button">
 		<div class="button-section">
 			<button class="button">
 				<img src="images/buttons.png" alt="buttons">
@@ -35,11 +36,11 @@
 				<img src="images/playbutton.png" alt="play_button">
 				<img src="images/pausebutton.png" alt="pause_button" width="100px" height="100px"> -->
 				<div class="empty">
-					<div class="fill" draggable="true"></div>
+					<div class="fill" draggable="true"></div> 
 					
 				<section id="chracter-space">
 					<div class="astro-men">
-						<img id="drag1" src="images/space_man_mic.png"  draggable="true" ondragstart="drag(event)" alt="space man"  width="200px" height="auto">
+						<img id="drag1" src="images/space_man_mic.png" draggable="true" ondragstart="drag(event)" alt="space man"  width="200px" height="auto">
 						<img id="drag2" src="images/space_man_keyboard.png " draggable="true" ondragstart="drag(event)"  alt="space keyboard" width="220px" height="auto">
 						<img id="drag3" src="images/space_man_sax.png" draggable="true" ondragstart="drag(event)" alt="space sax"  width="250px" height="auto">
 						<img id="drag4" src="images/space_man_dj.png" draggable="true" ondragstart="drag(event)" alt="space dj"width="220px" height="auto">
@@ -47,7 +48,40 @@
 						</div>
 					</div>
 				</section>
-				
+				<!DOCTYPE html>
+				<html lang="en">
+				<head>
+					<meta charset="UTF-8">
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					<title>AR & GSM | Astronaut Tracks</title>
+					<link rel="stylesheet" href="/css/main.css" type="text/css">
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+					<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+					<link rel="stylesheet" href="/css/main.css">
+					<link rel="preconnect" href="https://fonts.googleapis.com">
+					<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+					<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+				</head>
+				<body>
+					<h1 class="hidden">ASOS Astronaut Music Tracks Game</h1>
+					<section class="instructions-overlay one-fade force-cpu">
+						<div class="top-con">
+							<div class="asosSongs"><p>Click to change the songs and backgrounds</p></div>
+							<div class="asosControls"><p>Sound controls</p></div>
+							<div class="asosHelp"><p>Help</p></div>
+						</div>
+						<div class="instructions-top">
+							<div class="instructions-drag">
+								<p>Drag and drop the astronauts to add beats!</p>
+								<p>(Click to remove the astronauts)</p>
+							</div>
+							<div class="instructions-start">Click anywhere to start</div>
+						</div>
+					</section>
+					<div id="game-area"></div>
+					<script src="/js/main.js"></script>
+				</body>
+				</html>
     <script>
 		
         function allowDrop(ev) {
